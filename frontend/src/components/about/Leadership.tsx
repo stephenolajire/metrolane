@@ -28,7 +28,7 @@ const LeadershipSection = () => {
         "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
       bio: "With over 30 years of experience in healthcare administration and education policy, Dr. Ogunleye provides strategic direction for the institution.",
       qualifications: "MBBS, MPH, FWACP",
-      email: "chairman@metronecollege.edu.ng",
+      email: "chairman@metrolanecollege.edu.ng",
       phone: "+234 803 456 7890",
     },
     {
@@ -38,7 +38,7 @@ const LeadershipSection = () => {
         "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop",
       bio: "A distinguished academic with expertise in public health, Prof. Adekunle oversees all academic programs and ensures educational excellence.",
       qualifications: "PhD Public Health, MSc, BSc",
-      email: "provost@metronecollege.edu.ng",
+      email: "provost@metrolanecollege.edu.ng",
       phone: "+234 803 456 7891",
     },
     {
@@ -48,7 +48,7 @@ const LeadershipSection = () => {
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop",
       bio: "Responsible for curriculum development and academic standards, Dr. Nwankwo ensures our programs meet national and international benchmarks.",
       qualifications: "PhD Education, MSc, BSc",
-      email: "deputy.academics@metronecollege.edu.ng",
+      email: "deputy.academics@metrolanecollege.edu.ng",
       phone: "+234 803 456 7892",
     },
   ];

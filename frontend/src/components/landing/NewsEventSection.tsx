@@ -24,7 +24,7 @@ const NewsEventsSection = () => {
   const news = [
     {
       id: 1,
-      title: "Metrone College Wins National Science Competition",
+      title: "metrolane College Wins National Science Competition",
       excerpt:
         "Our students brought home the top prize at the National Science and Technology Competition, showcasing innovation and excellence...",
       image:
@@ -48,7 +48,7 @@ const NewsEventsSection = () => {
       id: 3,
       title: "Partnership with Leading Tech Companies",
       excerpt:
-        "Metrone College announces strategic partnerships with major technology firms to enhance student internship opportunities...",
+        "metrolane College announces strategic partnerships with major technology firms to enhance student internship opportunities...",
       image:
         "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
       category: "Partnership",
@@ -123,7 +123,7 @@ const NewsEventsSection = () => {
           <div className="w-24 h-1 bg-primary-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Stay updated with the latest happenings, achievements, and upcoming
-            events at Metrone College
+            events at metrolane College
           </p>
         </div>
 

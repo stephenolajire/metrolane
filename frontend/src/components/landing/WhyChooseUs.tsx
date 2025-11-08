@@ -97,7 +97,7 @@ const WhyChooseUsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="lg:text-4xl text-2xl font-bold text-gray-900 mb-4">
-            Why Choose Metrone College?
+            Why Choose metrolane College?
           </h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -173,7 +173,7 @@ const WhyChooseUsSection = () => {
                 </h3>
               </div>
               <p className="text-gray-600 italic leading-relaxed mb-6">
-                "Metrone College transformed my life. The dedicated teachers,
+                "metrolane College transformed my life. The dedicated teachers,
                 modern facilities, and supportive environment helped me achieve
                 my dreams. I'm now working at a leading tech company, and it all
                 started here."

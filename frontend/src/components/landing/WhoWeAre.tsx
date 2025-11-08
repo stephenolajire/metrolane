@@ -68,7 +68,7 @@ const WhoWeAreSection = () => {
               </h3>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Founded in 1999, Metrone College has been at the forefront of
+                  Founded in 1999, metrolane College has been at the forefront of
                   educational excellence in Rivers State. What began as a small
                   institution with a vision to transform lives through quality
                   education has grown into one of the region's most respected
