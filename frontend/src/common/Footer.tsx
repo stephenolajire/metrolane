@@ -50,7 +50,7 @@ const Footer = () => {
               <img
                 className="h-16 w-16 rounded-full object-cover"
                 src="/logo.jpg"
-                alt="Metrone College Logo"
+                alt="metrolane College Logo"
               />
               <div>
                 <h3 className="text-2xl font-bold text-white uppercase">
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
 
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-              Metrone College is committed to providing quality education that
+              metrolane College is committed to providing quality education that
               empowers students to achieve their full potential and become
               leaders in their chosen fields.
             </p>
@@ -90,10 +90,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary-400 " />
                 <a
-                  href="mailto:info@metronecollege.edu.ng"
+                  href="mailto:info@metrolanecollege.edu.ng"
                   className="text-sm hover:text-primary-400 transition-colors"
                 >
-                  info@metronecollege.edu.ng
+                  info@metrolanecollege.edu.ng
                 </a>
               </div>
             </div> */}
