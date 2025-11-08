@@ -16,40 +16,40 @@ const MobileNavigation = () => {
       name: "About",
       path: "/about",
       dropdown: [
-        { name: "Our Story", path: "/about/story" },
-        { name: "Mission & Vision", path: "/about/mission" },
-        { name: "Leadership", path: "/about/leadership" },
-        { name: "Accreditation", path: "/about/accreditation" },
+        { name: "Our Story", path: "/about#story" },
+        // { name: "Mission & Vision", path: "/about#mission" },
+        { name: "Leadership", path: "/about#leadership" },
+        // { name: "Accreditation", path: "/about#accreditation" },
       ],
     },
     {
       name: "Academics",
       path: "/academics",
       dropdown: [
-        { name: "Programs", path: "/academics/programs" },
-        { name: "Faculties", path: "/academics/faculties" },
-        { name: "Departments", path: "/academics/departments" },
-        { name: "Academic Calendar", path: "/academics/calendar" },
+        { name: "Programs", path: "/academics#programs" },
+        { name: "Faculties", path: "/academics#faculties" },
+        { name: "Departments", path: "/academics#departments" },
+        { name: "Academic Calendar", path: "/academics#calendar" },
       ],
     },
     {
       name: "Admissions",
       path: "/admissions",
       dropdown: [
-        { name: "How to Apply", path: "/admissions/apply" },
-        { name: "Requirements", path: "/admissions/requirements" },
-        { name: "Tuition & Fees", path: "/admissions/fees" },
-        { name: "Scholarships", path: "/admissions/scholarships" },
+        { name: "How to Apply", path: "/admissions#apply" },
+        { name: "Requirements", path: "/admissions#requirements" },
+        { name: "Tuition & Fees", path: "/admissions#fees" },
+        { name: "Scholarships", path: "/admissions#scholarships" },
       ],
     },
     {
       name: "Student Life",
       path: "/student-life",
       dropdown: [
-        { name: "Campus Facilities", path: "/student-life/facilities" },
-        { name: "Clubs & Organizations", path: "/student-life/clubs" },
-        { name: "Housing", path: "/student-life/housing" },
-        { name: "Events", path: "/student-life/events" },
+        { name: "Campus Facilities", path: "/student-life#facilities" },
+        { name: "Clubs & Organizations", path: "/student-life#clubs" },
+        { name: "Housing", path: "/student-life#housing" },
+        { name: "Events", path: "/student-life#events" },
       ],
     },
     {
@@ -95,7 +95,9 @@ const MobileNavigation = () => {
             <h2 className="text-lg text-primary-600 uppercase font-bold leading-tight">
               Metrolane
             </h2>
-            <h4 className="text-xs text-primary-600">College of health science <br /> and Technology</h4>
+            <h4 className="text-xs text-primary-600">
+              College of health science <br /> and Technology
+            </h4>
           </div>
         </div>
 
@@ -117,12 +119,6 @@ const MobileNavigation = () => {
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <>
-          {/* Backdrop */}
-          {/* <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
-            onClick={closeMenu}
-          /> */}
-
           {/* Slide-in Menu */}
           <div className="fixed top-[72px] left-0 right-0 bottom-0 bg-white z-40 overflow-y-auto animate-slideDown">
             <ul className="flex flex-col py-4">
@@ -130,20 +126,33 @@ const MobileNavigation = () => {
                 <li key={item.name} className="border-b border-gray-100">
                   {item.dropdown ? (
                     <>
-                      {/* Parent Item with Dropdown */}
-                      <button
-                        onClick={() => toggleDropdown(item.name)}
-                        className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-primary-50 transition-colors"
-                      >
-                        <span className="text-base font-medium text-gray-700">
+                      {/* Parent Item with Link and Dropdown Toggle */}
+                      <div className="flex items-center">
+                        <NavLink
+                          to={item.path}
+                          onClick={closeMenu}
+                          className={({ isActive }) =>
+                            `flex-1 px-6 py-4 text-base font-medium transition-colors ${
+                              isActive
+                                ? "bg-primary-50 text-primary-600 border-l-4 border-primary-600"
+                                : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
+                            }`
+                          }
+                        >
                           {item.name}
-                        </span>
-                        <ChevronDown
-                          className={`w-5 h-5 text-gray-700 transition-transform duration-200 ${
-                            activeDropdown === item.name ? "rotate-180" : ""
-                          }`}
-                        />
-                      </button>
+                        </NavLink>
+                        <button
+                          onClick={() => toggleDropdown(item.name)}
+                          className="px-4 py-4 hover:bg-primary-50 transition-colors"
+                          aria-label={`Toggle ${item.name} dropdown`}
+                        >
+                          <ChevronDown
+                            className={`w-5 h-5 text-gray-700 transition-transform duration-200 ${
+                              activeDropdown === item.name ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+                      </div>
 
                       {/* Dropdown Items */}
                       {activeDropdown === item.name && (

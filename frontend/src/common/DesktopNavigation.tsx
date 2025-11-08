@@ -16,40 +16,40 @@ const DesktopNavigation = () => {
       name: "About",
       path: "/about",
       dropdown: [
-        { name: "Our Story", path: "/about/story" },
-        { name: "Mission & Vision", path: "/about/mission" },
-        { name: "Leadership", path: "/about/leadership" },
-        { name: "Accreditation", path: "/about/accreditation" },
+        { name: "Our Story", path: "/about#story" },
+        // { name: "Mission & Vision", path: "/about#mission" },
+        { name: "Leadership", path: "/about#leadership" },
+        // { name: "Accreditation", path: "/about#accreditation" },
       ],
     },
     {
       name: "Academics",
       path: "/academics",
       dropdown: [
-        { name: "Programs", path: "/academics/programs" },
-        { name: "Faculties", path: "/academics/faculties" },
-        { name: "Departments", path: "/academics/departments" },
-        { name: "Academic Calendar", path: "/academics/calendar" },
+        { name: "Programs", path: "/academics#programs" },
+        { name: "Faculties", path: "/academics#faculties" },
+        { name: "Departments", path: "/academics#departments" },
+        { name: "Academic Calendar", path: "/academics#calendar" },
       ],
     },
     {
       name: "Admissions",
       path: "/admissions",
       dropdown: [
-        { name: "How to Apply", path: "/admissions/apply" },
-        { name: "Requirements", path: "/admissions/requirements" },
-        { name: "Tuition & Fees", path: "/admissions/fees" },
-        { name: "Scholarships", path: "/admissions/scholarships" },
+        { name: "How to Apply", path: "/admissions#apply" },
+        { name: "Requirements", path: "/admissions#requirements" },
+        { name: "Tuition & Fees", path: "/admissions#fees" },
+        { name: "Scholarships", path: "/admissions#scholarships" },
       ],
     },
     {
       name: "Student Life",
       path: "/student-life",
       dropdown: [
-        { name: "Campus Facilities", path: "/student-life/facilities" },
-        { name: "Clubs & Organizations", path: "/student-life/clubs" },
-        { name: "Housing", path: "/student-life/housing" },
-        { name: "Events", path: "/student-life/events" },
+        { name: "Campus Facilities", path: "/student-life#facilities" },
+        { name: "Clubs & Organizations", path: "/student-life#clubs" },
+        { name: "Housing", path: "/student-life#housing" },
+        { name: "Events", path: "/student-life#events" },
       ],
     },
     {
@@ -96,7 +96,7 @@ const DesktopNavigation = () => {
               Metrone
             </h2>
             <h4 className="text-h5 text-primary-600">
-              College of health science  <br /> and Technology
+              College of health science <br /> and Technology
             </h4>
           </div>
         </div>
@@ -114,9 +114,18 @@ const DesktopNavigation = () => {
               <div className="flex items-center gap-1">
                 {item.dropdown ? (
                   <>
-                    <span className="text-base font-medium text-gray-700 cursor-default">
+                    <NavLink
+                      to={item.path}
+                      className={({ isActive }) =>
+                        `text-base font-medium transition-colors duration-200 ${
+                          isActive
+                            ? "text-primary-600"
+                            : "text-gray-700 hover:text-primary-600"
+                        }`
+                      }
+                    >
                       {item.name}
-                    </span>
+                    </NavLink>
                     <button
                       onClick={() => toggleDropdown(item.name)}
                       className="p-1 hover:bg-primary-50 rounded transition-colors"
@@ -151,19 +160,13 @@ const DesktopNavigation = () => {
                 <ul className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-100 animate-fadeIn">
                   {item.dropdown.map((dropdownItem) => (
                     <li key={dropdownItem.name}>
-                      <NavLink
-                        to={dropdownItem.path}
+                      <a
+                        href={dropdownItem.path}
                         onClick={() => setActiveDropdown(null)}
-                        className={({ isActive }) =>
-                          `block px-4 py-2.5 text-sm transition-colors duration-150 ${
-                            isActive
-                              ? "bg-primary-50 text-primary-600 font-medium"
-                              : "text-gray-700 hover:bg-primary-50 hover:text-primary-600"
-                          }`
-                        }
+                        className="block px-4 py-2.5 text-sm transition-colors duration-150 "
                       >
                         {dropdownItem.name}
-                      </NavLink>
+                      </a>
                     </li>
                   ))}
                 </ul>
