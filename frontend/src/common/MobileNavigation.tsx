@@ -93,9 +93,9 @@ const MobileNavigation = () => {
           />
           <div>
             <h2 className="text-lg text-primary-600 uppercase font-bold leading-tight">
-              Metrone
+              Metrolane
             </h2>
-            <h4 className="text-xs text-primary-600">College</h4>
+            <h4 className="text-xs text-primary-600">College of health science <br /> and Technology</h4>
           </div>
         </div>
 
