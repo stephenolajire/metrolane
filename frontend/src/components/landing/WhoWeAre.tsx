@@ -16,7 +16,7 @@ const WhoWeAreSection = () => {
       duration: 1000,
       once: false,
       easing: "ease-out",
-      mirror:true,
+      mirror: true,
     });
   }, []);
 
@@ -61,7 +61,7 @@ const WhoWeAreSection = () => {
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Left: Story & Description */}
-          <div className="space-y-6" data-aos="fade-right">
+          <div className="space-y-6" data-aos="fade-up">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Our Story
@@ -123,7 +123,7 @@ const WhoWeAreSection = () => {
           </div>
 
           {/* Right: Image */}
-          <div className="relative" data-aos="fade-left">
+          <div className="relative" data-aos="fade-up" data-aos-delay="200">
             <img
               src="/Rectangle-204.png"
               alt="Students in classroom"
@@ -136,7 +136,7 @@ const WhoWeAreSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div
             className="from-primary-50 to-white rounded-xl p-8 border border-orange-100"
-            data-aos="flip-left"
+            data-aos="fade-up"
             data-aos-delay="100"
           >
             <div className="bg-primary-600 w-14 h-14 rounded-full flex items-center justify-center mb-4">
@@ -154,7 +154,7 @@ const WhoWeAreSection = () => {
 
           <div
             className=" from-primary-50 to-white rounded-xl p-8 border border-orange-100"
-            data-aos="flip-right"
+            data-aos="fade-up"
             data-aos-delay="200"
           >
             <div className="bg-primary-600 w-14 h-14 rounded-full flex items-center justify-center mb-4">

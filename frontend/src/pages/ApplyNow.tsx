@@ -60,11 +60,11 @@ const ApplyNowPage = () => {
       label: "Alternative",
       value: "08069556460, 08033938711",
     },
-    {
-      icon: <Mail className="w-5 h-5" />,
-      label: "Email",
-      value: "metrolanecollegeofhealthtech@gmail.com",
-    },
+    // {
+    //   icon: <Mail className="w-5 h-5" />,
+    //   label: "Email",
+    //   value: "metrolanecollegeofhealthtech@gmail.com",
+    // },
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Address",
@@ -128,7 +128,7 @@ const ApplyNowPage = () => {
             </p>
             <div
               className="inline-block bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3"
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-delay="200"
             >
               <p className="text-white font-semibold">
@@ -188,7 +188,7 @@ const ApplyNowPage = () => {
             {/* Available Programs */}
             <div
               className="bg-white rounded-xl shadow-md p-8"
-              data-aos="fade-right"
+              data-aos="fade-up"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="bg-primary-100 p-3 rounded-lg">
@@ -224,7 +224,7 @@ const ApplyNowPage = () => {
             {/* Entry Requirements */}
             <div
               className="bg-white rounded-xl shadow-md p-8"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="100"
             >
               <div className="flex items-center gap-3 mb-6">
@@ -261,7 +261,7 @@ const ApplyNowPage = () => {
             {/* How to Apply */}
             <div
               className="bg-linear-to-br from-green-50 to-green-100 rounded-xl shadow-md p-8 border-2 border-green-200"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="200"
             >
               <div className="flex items-center gap-3 mb-6">
@@ -300,16 +300,16 @@ const ApplyNowPage = () => {
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="bg-green-100 rounded-full p-1  mt-1">
+                      {/* <div className="bg-green-100 rounded-full p-1  mt-1">
                         <CheckCircle className="w-4 h-4 text-green-600" />
-                      </div>
+                      </div> */}
                       <div>
-                        <p className="font-medium text-gray-900">
+                        {/* <p className="font-medium text-gray-900">
                           Email us at:
                         </p>
                         <p className="text-gray-700">
                           metrolanecollegeofhealthtech@gmail.com
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -366,7 +366,7 @@ const ApplyNowPage = () => {
             {/* Contact Details */}
             <div
               className="bg-white rounded-xl shadow-md p-6 sticky top-6"
-              data-aos="fade-left"
+              data-aos="fade-up"
             >
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 Contact Information
@@ -383,7 +383,7 @@ const ApplyNowPage = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-600 mb-1">{info.label}</p>
-                      <p className="text-gray-900 font-medium wrap-break-words">
+                      <p className="text-gray-900 font-medium text-wrap">
                         {info.value}
                       </p>
                     </div>
@@ -405,7 +405,7 @@ const ApplyNowPage = () => {
             {/* Download Brochure */}
             <div
               className="bg-linear-to-br from-green-600 to-green-700 rounded-xl shadow-md p-6 text-white"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="100"
             >
               <Download className="w-12 h-12 mb-4" />

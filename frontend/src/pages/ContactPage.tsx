@@ -75,14 +75,13 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 mt-20 lg:mt-24">
       {/* Hero Section with Background Image */}
-      <div className="relative h-100  from-primary-900 to-primary-700 overflow-hidden">
+      <div className="relative h-100 bg-linear-to-r from-orange-100 to-orange-400 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop')",
           }}
-
         />
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <div className="max-w-3xl">
@@ -106,9 +105,9 @@ const ContactPage = () => {
             </div>
             <h3 className="font-semibold text-gray-900 mb-2">Main Office</h3>
             <p className="text-sm text-gray-600">
-              123 University Avenue
+              Plot 40, Orisunbare, Isale-Otin,
               <br />
-              Port Harcourt, Rivers State
+              Eko Ende Road, Ikirun, Osun State
               <br />
               Nigeria
             </p>

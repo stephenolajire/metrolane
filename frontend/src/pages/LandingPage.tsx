@@ -1,7 +1,8 @@
 import Hero from "../components/landing/Hero"
 import NewsEventsSection from "../components/landing/NewsEventSection";
 import WhoWeAreSection from "../components/landing/WhoWeAre";
-import WhyChooseUsSection from "../layouts/WhyChooseUs";
+import WhyChooseUsSection from "../components/landing/WhyChooseUs";
+
 
 
 const LandingPage = () => {

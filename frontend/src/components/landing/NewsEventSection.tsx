@@ -163,7 +163,7 @@ const NewsEventsSection = () => {
             {/* Featured News */}
             <div
               className="grid grid-cols-1 lg:grid-cols-2 gap-8 from-primary-50 to-white rounded-2xl overflow-hidden shadow-lg"
-              data-aos="zoom-in"
+              data-aos="fade-up"
             >
               <div className="relative h-64 lg:h-auto">
                 <img

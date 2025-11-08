@@ -133,7 +133,7 @@ const WhyChooseUsSection = () => {
         {/* Achievements Banner */}
         <div
           className="from-primary-600 to-primary-800 rounded-2xl p-12 shadow-2xl"
-          data-aos="zoom-in"
+          data-aos="fade-up"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
@@ -156,7 +156,7 @@ const WhyChooseUsSection = () => {
 
         {/* Testimonial Section */}
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div data-aos="fade-right">
+          <div data-aos="fade-up">
             <img
               src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop"
               alt="Happy students"
@@ -164,7 +164,7 @@ const WhyChooseUsSection = () => {
             />
           </div>
 
-          <div data-aos="fade-left">
+          <div data-aos="fade-up" data-aos-delay="100">
             <div className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-primary-600">
               <div className="flex items-center mb-4">
                 <Award className="w-8 h-8 text-primary-600 mr-3" />

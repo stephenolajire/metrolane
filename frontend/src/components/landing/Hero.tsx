@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  ArrowRight,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -31,8 +27,6 @@ const Hero = () => {
         "Join a community of scholars, leaders, and innovators. Your journey to greatness begins here.",
     },
   ];
-
-
 
   // Initialize AOS
   useEffect(() => {
@@ -73,12 +67,8 @@ const Hero = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 w-full h-full transition-all duration-1000 ${
-              currentSlide === index
-                ? "opacity-100 translate-x-0"
-                : index < currentSlide
-                ? "opacity-0 -translate-x-full"
-                : "opacity-0 translate-x-full"
+            className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
+              currentSlide === index ? "opacity-100" : "opacity-0"
             }`}
             style={{
               backgroundImage: `url('${slide.image}')`,
@@ -99,7 +89,7 @@ const Hero = () => {
         onClick={prevSlide}
         className="absolute hidden lg:flex left-8 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 backdrop-blur-md p-3 rounded-full transition-all duration-300 group"
         aria-label="Previous slide"
-        data-aos="fade-right"
+        data-aos="fade-in"
         data-aos-delay="1200"
       >
         <ChevronLeft className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
@@ -109,7 +99,7 @@ const Hero = () => {
         onClick={nextSlide}
         className="absolute hidden lg:flex  right-8 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 backdrop-blur-md p-3 rounded-full transition-all duration-300 group"
         aria-label="Next slide"
-        data-aos="fade-left"
+        data-aos="fade-in"
         data-aos-delay="1200"
       >
         <ChevronRight className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
@@ -122,21 +112,21 @@ const Hero = () => {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             <span
               className="inline-block"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="200"
             >
               {slides[currentSlide].title[0]}
             </span>{" "}
             <span
               className="inline-block"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="400"
             >
               {slides[currentSlide].title[1]}
             </span>{" "}
             <span
               className="inline-block text-primary-600"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="600"
             >
               {slides[currentSlide].title[2]}
@@ -146,7 +136,7 @@ const Hero = () => {
           {/* Subtitle */}
           <p
             className="text-xl md:text-2xl text-gray-100 mb-8 max-w-2xl leading-relaxed"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="800"
           >
             {slides[currentSlide].subtitle}
@@ -155,7 +145,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div
             className="flex flex-wrap gap-4 mb-12"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="1000"
           >
             <Link to="/apply-now">
