@@ -54,9 +54,9 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-2xl font-bold text-white uppercase">
-                  Metrone
+                  Metrolane 
                 </h3>
-                <p className="text-sm text-primary-400">College</p>
+                <p className="text-sm text-primary-400">College of health science <br /> and technology</p>
               </div>
             </div>
 
@@ -254,7 +254,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <p className="text-sm text-gray-400 text-center md:text-left">
-              © {currentYear} Metrone College. All rights reserved.
+              © {currentYear} Metrolane College. All rights reserved.
             </p>
 
             {/* Legal Links */}
@@ -289,7 +289,7 @@ const Footer = () => {
           {/* Accreditation Notice */}
           <div className="mt-4 pt-4 border-t border-gray-800">
             <p className="text-xs text-gray-500 text-center">
-              Metrone College is accredited by the National Universities
+              Metrolane College of health science and technology is accredited by the National Universities
               Commission (NUC) and recognized by the Federal Ministry of
               Education, Nigeria.
             </p>
