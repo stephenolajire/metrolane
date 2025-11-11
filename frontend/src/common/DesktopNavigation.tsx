@@ -93,7 +93,7 @@ const DesktopNavigation = () => {
           />
           <div>
             <h2 className="text-h3 text-primary-600 uppercase font-bold leading-tight">
-              Metrone
+              Metrolane
             </h2>
             <h4 className="text-h5 text-primary-600">
               College of health science <br /> and Technology
