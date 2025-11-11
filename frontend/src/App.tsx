@@ -5,6 +5,7 @@ import ContactPage from "./pages/ContactPage";
 import ApplyNowPage from "./pages/ApplyNow";
 import AboutPage from "./pages/AboutPage";
 import AcademicsPage from "./pages/AcademicsPage";
+import StudentLifePage from "./pages/StudentLifePage";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/apply-now" element={<ApplyNowPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/academics" element={<AcademicsPage />} />
+            <Route path="/student-life" element={<StudentLifePage />} />
           </Route>
         </Routes>
       </Router>
