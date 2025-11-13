@@ -83,7 +83,7 @@ const StudentLifeHero = () => {
 
           {/* Main Heading */}
           <h1
-            className="text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight"
             data-aos="fade-up"
             data-aos-delay="100"
           >

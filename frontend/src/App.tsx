@@ -6,6 +6,7 @@ import ApplyNowPage from "./pages/ApplyNow";
 import AboutPage from "./pages/AboutPage";
 import AcademicsPage from "./pages/AcademicsPage";
 import StudentLifePage from "./pages/StudentLifePage";
+import AdmissionPage from "./pages/AdmissionPage";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/academics" element={<AcademicsPage />} />
             <Route path="/student-life" element={<StudentLifePage />} />
+            <Route path="/admissions" element={<AdmissionPage />} />
           </Route>
         </Routes>
       </Router>

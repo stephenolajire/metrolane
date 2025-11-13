@@ -103,7 +103,7 @@ const ApplyNowPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 mt-20 lg:mt-24">
       {/* Hero Section */}
-      <div className="relative h-96 bg-linear-to-r from-green-900 to-green-700 overflow-hidden">
+      <div className="relative h-96 lg:h-[60vh] bg-linear-to-r from-green-900 to-green-700 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{

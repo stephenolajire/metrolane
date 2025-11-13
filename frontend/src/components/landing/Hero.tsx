@@ -61,7 +61,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[90vh] w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
       {/* Background Images Carousel */}
       <div className="absolute inset-0 w-full h-full">
         {slides.map((slide, index) => (
